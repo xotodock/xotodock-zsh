@@ -15,6 +15,6 @@ RUN curl -L git.io/antigen > /home/main/.antigen/antigen.zsh
 RUN chown -R main:main /home/main/.antigen /home/main/.zshrc
 # Set up ZSH as the unprivileged user (we just need to start it, it'll initialise our setup itself)
 USER main
-RUN /bin/zsh /home/main/.zshrc
+# RUN /bin/zsh /home/main/.zshrc
 # Switch back to root for whatever else we're doing
 USER root
